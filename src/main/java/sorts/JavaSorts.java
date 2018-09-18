@@ -27,12 +27,12 @@ public class JavaSorts {
         arr[j] = temp;
     }
     public static void quickSort(int[] arr){
-       if ( !( arr.length == 0 || arr.length == 1 )){
-           quickSort(arr,0,arr.length-1);
-       };
+        quickSort(arr,0,arr.length-1);
     }
 
     public static void main(String[] args) {
-
+      int[] arr = {2,1};
+      quickSort(arr);
+      System.out.println(Arrays.toString(arr));
     }
 }
